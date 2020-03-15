@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pagalba</title>
+<meta name="viewpot" content="width=device-width, initial-scale=1.0">
+<style>
+* 	{
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family:  Arial, Helvetica, sans-serif;
+	height: 100vh;
+  } 
+  
+ header {
+ margin: 0;
+	display: block;
+	padding-left: 20px;
+	
+	
+	
+ }
+.nav1 {
+	//float: left;
+	width: 100%;
+	//text-align: center;
+	
+}
+.form {
+	//margin: 0;
+	//padding: 0;
+	width: 100%;
+	//text-align: center;
+	background-color: #F8F8FF;
+}
+#frm {
+	background-color: #F8F8FF;
+	padding: 25px;
+}
+.main {
+	float: left;
+	width: 100%;
+	padding: 20px;
+	//text-align: center;
+	background-color: #F8F8FF;
+}
+
+.over {
+	display: none;
+	position: fixed;
+	top: 0px;
+	//padding-left: calc(50%-250px);
+	//top: 50%;
+	left: 15%;
+	//top: 15%;
+	//align-content: center;
+	width: 100%;
+	//height: 100%;
+	//overflow: auto;
+	z-index: 8;
+	
+	
+}
+
+.flex-container {
+	position: relative;
+	display: flex;
+	
+	width:70%;
+	padding: 10px;
+	height: 450px;
+	
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: left;
+	background-color: lightgrey;
+	overflow: auto;
+}
+
+.flex-container > table {
+	float: left;
+	max-width: 200px;
+	margin: 20px;
+	text-align: left;
+	background-color: white;
+	font-size: 10px;
+}
+.flex-container > p {
+	float: left;
+	align-content: top;
+	text-align: left;
+	padding: 25px;
+	font-size: 15px;
+}
+
+li { 
+	float: left;
+	font-size: 70%;
+}
+ul { 
+	padding: 0;
+	margin: 0;
+	display: block;
+	list-style: none;
+	overflow: hidden;
+	list-style-type: none;
+	background-color: #4682B4;
+}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 20px 20px;
+	text-decoration: none;
+}
+li a:hover{
+	background-color: #99b3e6;
+}
+
+@media only screen and (max-width:620px) {
+	.form, .main {
+	width: 100%;
+	}
+}
+
+label{ 
+	display: block;
+	
+	margin-bottom: 5px;
+	margin-left: 10px;
+	text-align: left;
+	//width: 150px;
+ }
+ 
+textarea { 
+display: block;
+	
+	margin-bottom: 25px;
+	margin-left: 10px;
+	text-align: left;
+ }
+ legend { 
+	font-size: 70%;
+	
+ }
+ 
+select { 
+
+	margin-bottom: 5px;
+	margin-left: 10px;
+	text-align: left;
+	text-align: left;
+ }
+ 
+
+input[type="text"], input[type="email"]	{display: inline-block;
+	//background: white
+	//border: 2px solid  lightgrey;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	width: 150px;
+}
+
+input[type="submit"] {
+	margin-left: 10px;
+	margin-bottom: 20px;
+	width: 90px;
+	height: 40px;
+	text-align: center;
+	background-color: #b3d9ff;
+}
+input[type="button"] {
+	margin-left: 10px;
+	margin-bottom: 20px;
+	width: 90px;
+	height: 40px;
+	text-align: center;
+	background-color: #c6ecd9;
+}
+
+fieldset {
+	max-width: 450px;
+	padding: 20px;
+	margin: auto;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+th, td {
+	padding: 4px;
+}
+::placeholder {
+	color: grey;
+}
+
+.uzdr {
+	position: related;
+	padding-right: 10px;
+}
+#lenteles2 {
+	background-color: lightgrey;
+	padding: 5px 5px;
+}
+.ch, .chl {
+	display: block;
+	vertical-align: middle;
+	margin: 10px;
+	cursor: pointer;
+	
+}
+.chl {
+	
+	margin-bottom: 20px;
+}
+h4 {
+ margin: 0;
+}
+
+</style>
+</head>
+<body>
+<header><h3>Pagalbos centras</h3></header>
+<nav id="nav1" class="nav1">
+	<ul id="ul1">
+	<li><a href="#">Pagalba</a></li>
+	<li><a href="#">Rekomendacijos</a></li>
+	<li><a href="#">Paslaugos</a></li>
+	<li><a href="#">Kontaktai</a></li>
+</ul>
+</nav>
+	
+<div>	
+<div class="form" >
+
+<form id="frm">
+<h4 align="center">Medicininio patikrinimo registracija</h4><br>
+<fieldset >
+<legend > Registracija: </legend>
+<label > Vardas: </label><input type="text" placeholder="Vardas" required id="in1" class="" maxlength="" pattern="[A-Za-z0-9]+">
+<label> Pavardė: </label><input type="text" placeholder="Pavardė" required id="in2" class="" maxlength="" pattern="[A-Za-z0-9]+">
+<label>  El. paštas: </label><input type="email" placeholder="El. paštas" name="" required id="in3"  class="">
+<label> Telefonas: </label><input type="text" placeholder="Telefonas" required id="in4" class="" maxlength="" pattern="[0-9]+">
+<label> Adresas:</label><textarea name="area" id="area"  rows="4" cols="20"  pattern="[A-Za-z0-9]+" required  onblur="return patkrn2()"  onchange="return patkrn10()" ondrop="return patkrn20()"></textarea>
+
+<label> <h4>Ar grįžote iš šių šalių: </h4></label>
+
+
+<input type="checkbox" class = "ch"><label class = "chl"> Kinija </label>
+<input type="checkbox" class = "ch"><label class = "chl"> Japonija </label>
+<input type="checkbox" class = "ch"><label class = "chl"> Pietų Korėja </label>
+<input type="checkbox" class = "ch"><label class = "chl"> Italija </label>
+<input type="checkbox" class = "ch"><label class = "chl"> Ispanija </label>
+<input type="checkbox" class = "ch"><label class = "chl"> Vokietija </label><br>
+
+
+
+<label> <h4>Pasirinkti gydytoją: </h4></label>
+<select id="gyd">
+
+
+<option value="g2">Jonas Vardauskas</option>
+<option value="g3">Albertas Jonauskas</option>
+<option value="g4">Eduardas Pavardenskas</option>
+<option value="g5">Alfredas Jonelis</option>
+<option value="g6">Vardenis Pavardenskas</option>
+<option value="g7">Vardenis Pavardenėlis</option>
+<option value="g8">Jonas Pavasarėlis</option>
+
+</select><br><br>
+
+<input type="submit"  value="Registruotis" class="mgt" onclick="funkcija1()"> 
+<input type="button"  value="Išvalyti" class="mgt2" onclick="funkcija2()">  
+</fieldset>
+</form>
+</div>
+</div>
+
+<div id="lenteles" class="over" >
+
+
+<div id="" class="flex-container">
+<p>Pasirinkti gydytojai</p>
+<table id="table1">
+	<tr>
+	<th colspan="2">Gydytojas </th>
+	</tr>
+	<tr>
+	<td> Jonas  </td>
+	<td> Vardauskas</td>
+	</tr>
+	<tr>
+	<th colspan="2">Pacientai </th>
+	</tr>	
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas1</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas2</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas3</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas4</td>
+	</tr>
+</table>
+
+<table id="table2">
+	<tr>
+	<th colspan="2">Gydytojas </th>
+	</tr>
+	<tr>
+	<td> Albertas  </td>
+	<td> Jonauskas</td>
+	</tr>
+	<tr>
+	<th colspan="2">Pacientai </th>
+	</tr>	
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas5</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas6</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas7</td>
+	</tr>
+</table>
+
+<table id="table3">
+	<tr>
+	<th colspan="2">Gydytojas </th>
+	</tr>
+	<tr>
+	<td> Eduardas  </td>
+	<td> Pavardenskas</td>
+	</tr>
+	<tr>
+	<th colspan="2">Pacientai </th>
+	</tr>	
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas8</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas9</td>
+	</tr>
+	
+</table>
+
+<table  id="table4">
+	<tr>
+	<th colspan="2">Gydytojas </th>
+	</tr>
+	<tr>
+	<td> Alfredas  </td>
+	<td> Jonelis</td>
+	</tr>
+	<tr>
+	<th colspan="2">Pacientai </th>
+	</tr>	
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas10</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas11</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas12</td>
+	</tr>
+</table>
+
+<table id="table5">
+	<tr>
+	<th colspan="2">Gydytojas </th>
+	</tr>
+	<tr>
+	<td> Vardenis  </td>
+	<td> Pavardenskas</td>
+	</tr>
+	<tr>
+	<th colspan="2">Pacientai </th>
+	</tr>	
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas13</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas14</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas15</td>
+	</tr>
+</table>
+
+<table id="table6">
+	<tr>
+	<th colspan="2">Gydytojas </th>
+	</tr>
+	<tr>
+	<td> Vardenis  </td>
+	<td> Pavardenėlis</td>
+	</tr>
+	<tr>
+	<th colspan="2">Pacientai </th>
+	</tr>	
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas16</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas17</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas18</td>
+	</tr>
+</table>
+
+<table id="table7">
+	<tr>
+	<th colspan="2">Gydytojas </th>
+	</tr>
+	<tr>
+	<td> Jonas </td>
+	<td> Pavasarėlis</td>
+	</tr>
+	<tr>
+	<th colspan="2">Pacientai </th>
+	</tr>	
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas19</td>
+	</tr>
+	<tr>
+	<td>Vardenis</td>
+	<td>Pacientauskas20</td>
+	</tr>
+	
+</table>
+
+</div>
+
+
+
+<button type="button" class="uzdr" onclick="uzdaryti()">Uždaryti</button>
+</div>
+
+<script>
+function uzdaryti() {
+	document.getElementById("lenteles").style.display = "none";
+}
+
+function funkcija1() {
+
+	if (document.getElementById("gyd").value=="g2")
+		{
+		var tabl = document.getElementById("table1");
+		var row = tabl.insertRow(tabl.length);
+		var cell1 = row.insertCell(0);
+		var cell2 = row.insertCell(1);
+		var vard = document.getElementById("in1").value;
+		var pavr = document.getElementById("in2").value;
+		cell1.innerHTML = vard;
+		cell2.innerHTML = pavr;
+		
+		document.getElementById("frm").reset();
+		document.getElementById("lenteles").style.display = "block";
+		}
+	
+	else if (document.getElementById("gyd").value=="g3")
+		{
+		var tabl2 = document.getElementById("table2");
+		var row2 = tabl2.insertRow(tabl2.length);
+		var cell3 = row2.insertCell(0);
+		var cell4 = row2.insertCell(1);
+		var vard3 = document.getElementById("in1").value;
+		var pavr4 = document.getElementById("in2").value;
+		cell3.innerHTML = vard3;
+		cell4.innerHTML = pavr4;
+		document.getElementById("frm").reset();
+		document.getElementById("lenteles").style.display = "block";
+		}
+		
+		else if (document.getElementById("gyd").value=="g4")
+		{
+		var tabl3 = document.getElementById("table3");
+		var row3 = tabl3.insertRow(tabl3.length);
+		var cell5 = row3.insertCell(0);
+		var cell6 = row3.insertCell(1);
+		var vard5 = document.getElementById("in1").value;
+		var pavr6 = document.getElementById("in2").value;
+		cell5.innerHTML = vard5;
+		cell6.innerHTML = pavr6;
+		document.getElementById("frm").reset();
+		document.getElementById("lenteles").style.display = "block";
+		}
+		
+		else if (document.getElementById("gyd").value=="g5")
+		{
+		var tabl4 = document.getElementById("table4");
+		var row4 = tabl4.insertRow(tabl4.length);
+		var cell7 = row4.insertCell(0);
+		var cell8 = row4.insertCell(1);
+		var vard7 = document.getElementById("in1").value;
+		var pavr8 = document.getElementById("in2").value;
+		cell7.innerHTML = vard7;
+		cell8.innerHTML = pavr8;
+		document.getElementById("frm").reset();
+		document.getElementById("lenteles").style.display = "block";
+		}
+		
+		else if (document.getElementById("gyd").value=="g6")
+		{
+		var tabl5 = document.getElementById("table5");
+		var row5 = tabl5.insertRow(tabl5.length);
+		var cell9 = row5.insertCell(0);
+		var cell10 = row5.insertCell(1);
+		var vard9 = document.getElementById("in1").value;
+		var pavr10 = document.getElementById("in2").value;
+		cell9.innerHTML = vard9;
+		cell10.innerHTML = pavr10;
+		document.getElementById("frm").reset();
+		document.getElementById("lenteles").style.display = "block";
+		}
+		
+		else if (document.getElementById("gyd").value=="g7")
+		{
+		var tabl6 = document.getElementById("table6");
+		var row6 = tabl6.insertRow(tabl6.length);
+		var cell11 = row6.insertCell(0);
+		var cell12 = row6.insertCell(1);
+		var vard11 = document.getElementById("in1").value;
+		var pavr12 = document.getElementById("in2").value;
+		cell11.innerHTML = vard11;
+		cell12.innerHTML = pavr12;
+		document.getElementById("frm").reset();
+		document.getElementById("lenteles").style.display = "block";
+		}
+		
+		else if (document.getElementById("gyd").value=="g8")
+		{
+		var tabl7 = document.getElementById("table7");
+		var row7 = tabl7.insertRow(tabl7.length);
+		var cell13 = row7.insertCell(0);
+		var cell14 = row7.insertCell(1);
+		var vard13 = document.getElementById("in1").value;
+		var pavr14 = document.getElementById("in2").value;
+		cell13.innerHTML = vard13;
+		cell14.innerHTML = pavr14;
+		document.getElementById("frm").reset();
+		document.getElementById("lenteles").style.display = "block";
+		}
+	else {
+		document.getElementById("lenteles").style.display = "block";
+	}
+	
+}
+
+function funkcija2() {
+document.getElementById("frm").reset();
+}
+
+
+	
+
+</script>
